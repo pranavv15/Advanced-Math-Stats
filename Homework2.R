@@ -18,24 +18,14 @@ hat
 # Symmetric hat matrix 
 hat_trans <- t(hat)
 hat_trans
-# is.symmetric.matrix(hat)
 all.equal(hat_trans,hat)
-# if(hat_trans == hat){
-#   print("TRUE")
-# } else{
-#   print("FALSE")
-# }
+
 
 # Idempotent hat matrix
 hat_2 <- hat %*% hat
 hat_2
-# is.idempotent.matrix(hat)
 all.equal(hat_2,hat)
-# if(hat_2 == hat){
-#   print("TRUE")
-# } else{
-#   print("FALSE")
-# }
+
 
 # Limits of diagonal elements
 for (i in 1:8) {
