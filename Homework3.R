@@ -55,3 +55,4 @@ labels2 <- class.ind(test[,1])
 conf<-test.cl(labels2, predict(myiris, test))
 acc<-sum(diag(conf))/sum(conf)
 cat("The accuracy on the test set is", acc,"\n")
+
